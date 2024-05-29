@@ -169,36 +169,26 @@ publicationDate: must not be null  or null
 # Running Locally
 <br/>
 
-Clone the Repository
-cd book-management-api
-Update Application Properties:
-Edit the src/main/resources/application.properties file to update your MySQL database connection settings.
-
-properties
-Copy code
-spring.datasource.url=jdbc:mysql://localhost:3306/booksManage
-spring.datasource.username=yourUsername
-spring.datasource.password=yourPassword
-spring.jpa.hibernate.ddl-auto=update
-Run the Application:
-
-bash
-Copy code
-./mvnw spring-boot:run
+<ul>
+<li>Clone the Repository</li>
+<li>cd book-management-api</li>
+<li>Update Application Properties </li>
+<li>Edit the src/main/resources/application.properties file to update your MySQL database connection settings.</li>
+<li>Run the Application: </li>
+</ul>
+<br/>
 The application will run on http://localhost:8080.
 
-Database Setup
+# Database Setup
 Make sure you have MySQL installed and running. Create a database named booksManage or update the database name in the application.properties file to match your configuration.
 
-sql
-Copy code
-CREATE DATABASE booksManage;
-Swagger Documentation
-Swagger is integrated for API documentation. Once the application is running, you can access the Swagger UI at:
 
-bash
-Copy code
-http://localhost:8080/swagger-ui.html
+# Swagger Documentation
+
+Swagger is integrated for API documentation. Once the application is running, you can access the Swagger UI at:
+<br/>
+[
+http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui/index.html#/)
 </p>
 
 <h2> Please ensure that you enabled annotation based processing</h2>
