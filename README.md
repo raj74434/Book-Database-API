@@ -13,6 +13,7 @@ This project is a RESTful API for managing book entries. The API allows you to c
 <li>MySQL</li>
 <li>Hibernate</li>
 <li>Swagger</li>
+<li>LomBok</li>
 </ul>
 
 <h1>Endpoints</h1>
@@ -193,5 +194,5 @@ Swagger is integrated for API documentation. Once the application is running, yo
 [
 http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui/index.html#/)
 </p>
-
-<h2> Please ensure that you enabled annotation based processing</h2>
+#Note
+<h2> Please ensure that you enabled annotation-based processing because LomBok is used in this project</h2>
