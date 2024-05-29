@@ -16,12 +16,13 @@ This project is a RESTful API for managing book entries. The API allows you to c
 </ul>
 
 <h1>Endpoints</h1>
+<br/>
 Base URL :- http://localhost:8080/books
 <br/>
 
 BookController
 <br/>
-
+<br/>
 Create a Book Entry
 <br/>
 POST :- base URL /
@@ -59,7 +60,7 @@ Response:
   <br/>
 }
 <br/>
-
+<hr/>
 
 Get a Book Entry by ID
 <br/>
@@ -82,6 +83,7 @@ Response:
 }
 <br/>
 <br/>
+<hr/>
 Get All Book Entries
 <br/>
 
@@ -103,6 +105,7 @@ Response:
 
 <br/>
 <br/>
+<hr/>
 Update a Book Entry
 <br/>
 
@@ -141,7 +144,7 @@ Response:
 }
 <br/>
 <br/>
-
+<hr/>
 Delete a Book Entry
 <br/>
 
