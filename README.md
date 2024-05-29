@@ -24,7 +24,7 @@ BookController
 
 Create a Book Entry
 <br/>
-POST /books/
+POST :- base URL /
 
 <br/>
 Request Body:
@@ -41,39 +41,55 @@ Request Body:
   <br/>
 }
 <br/>
-
+<br/>
 Response:
-Copy code
+<br/>
+
 {
+<br/>
   "id": 1,
+  <br/>
   "title": "Book Title",
+  <br/>
   "author": "Author Name",
+  <br/>
   "isbn": "1234567890123",
+  <br/>
   "publicationDate": "2023-01-01"
+  <br/>
 }
+<br/>
+
+
 Get a Book Entry by ID
-
-bash
-Copy code
-GET /books/{bookId}
+<br/>
+GET :- base Url/{bookId}
+<br/>
 Response:
-json
-Copy code
+<br/>
 {
+<br/>
   "id": 1,
+  <br/>
   "title": "Book Title",
+  <br/>
   "author": "Author Name",
+  <br/>
   "isbn": "1234567890123",
+  <br/>
   "publicationDate": "2023-01-01"
+  <br/>
 }
+<br/>
+<br/>
 Get All Book Entries
+<br/>
 
-bash
-Copy code
-GET /books/
+GET :- base Url /
+<br/>
 Response:
-json
-Copy code
+<br/>
+
 [
   {
     "id": 1,
@@ -84,54 +100,76 @@ Copy code
   },
   ...
 ]
+
+<br/>
+<br/>
 Update a Book Entry
+<br/>
 
-bash
-Copy code
-PUT /books/{bookId}
+PUT :- base Url/{bookId}
+<br/>
 Request Body:
-json
-Copy code
+<br/>
+
 {
+<br/>
   "title": "Updated Book Title",
+  <br/>
   "author": "Updated Author Name",
+  <br/>
   "isbn": "1234567890123",
+  <br/>
   "publicationDate": "2023-01-01"
+  <br/>
 }
+<br/>
+
 Response:
-json
-Copy code
+<br/>
 {
+<br/>
   "id": 1,
+  <br/>
   "title": "Updated Book Title",
+  <br/>
   "author": "Updated Author Name",
+  <br/>
   "isbn": "1234567890123",
+  <br/>
   "publicationDate": "2023-01-01"
+  <br/>
 }
+<br/>
+<br/>
+
 Delete a Book Entry
+<br/>
 
-bash
-Copy code
-DELETE /books/{bookId}
+DELETE :- /{bookId}
+<br/>
 Response:
-json
-Copy code
-{
-  "message": "Book entry deleted successfully"
-}
-Data Validation
+<br/>
+
+
+  <h3>"message": "Book entry deleted successfully"</h3>
+
+<h1>Data Validation</h1>
 Data validation is implemented to ensure that all book entries have the required fields and correct data types. The following fields are validated:
+<br/>
+title: must not be blank or null
+<br/>
+author: must not be blank  or null
+<br/>
+isbn: must be a 13-digit number  or null
+<br/>
+publicationDate: must not be null  or null
+<br/>
 
-title: must not be blank
-author: must not be blank
-isbn: must be a 13-digit number
-publicationDate: must not be null
-Running Locally
-Clone the Repository:
 
-bash
-Copy code
-git clone https://github.com/yourusername/book-management-api.git
+# Running Locally
+<br/>
+
+Clone the Repository
 cd book-management-api
 Update Application Properties:
 Edit the src/main/resources/application.properties file to update your MySQL database connection settings.
