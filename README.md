@@ -6,35 +6,43 @@
 This project is a RESTful API for managing book entries. The API allows you to create, read, update, and delete book entries. It uses Java, Spring Boot, MySQL, Hibernate, and Swagger for documentation.
 
 <h1>Tech Stack</h1>
+
 <ul>
 <li>Java</li>
 <li>Spring Boot</li>
 <li>MySQL</li>
 <li>Hibernate</li>
 <li>Swagger</li>
-  </ul>
-Endpoints
-Base URL
-bash
-Copy code
-http://localhost:8080/books
-BookController
-Create a Book Entry
+</ul>
 
-bash
-Copy code
+<h1>Endpoints</h1>
+Base URL :- http://localhost:8080/books
+<br/>
+
+BookController
+<br/>
+
+Create a Book Entry
+<br/>
 POST /books/
+
+<br/>
 Request Body:
-json
-Copy code
+<br/>
 {
+<br/>
   "title": "Book Title",
+  <br/>
   "author": "Author Name",
+  <br/>
   "isbn": "1234567890123",
+  <br/>
   "publicationDate": "2023-01-01"
+  <br/>
 }
+<br/>
+
 Response:
-json
 Copy code
 {
   "id": 1,
